@@ -1,0 +1,40 @@
+# TODO: This example was pulled from another configuration, not tested here yet. 
+env:
+  global:
+    # Example config
+    secure: jq+DqVlimCti+5imNhCdi7QjlTZ3ibkKnOeUfN6IjDf+gnrOYxFALXnrXLwMRJ0B3GNESTyxxxxxxxxxxx=
+
+# Test running on a mac
+os: osx
+# dist: trusty
+
+language: node_js
+node_js:
+ - "lts/*"
+
+cache:
+  directories:
+    - "node_modules"
+
+before_install:
+  - npm config set @sencha:registry https://npm.sencha.com
+  - npm config set //npm.sencha.com/:_authToken=$NPM_TOKEN
+
+install:
+  - npm install
+
+before_script:
+  # Start the sauce labs tunnel
+  - npx sc -u sencha -k xxxxxxxxxxxxxxxx --tunnel-identifier teamcityTunnel --no-ssl-bump-domains all &
+  - sleep 40
+
+script:
+  # Example way to run tests indiviually
+  - npx stc run -p saucePool --scenarioName "Admin Dashboard - Classic"
+  - npx stc run -p saucePool --scenarioName "Admin Dashboard - Modern"
+  # OR run it from npm
+  - npm test
+
+after_script:
+  # Kill sauce labs tunnel, although vm will shutdown
+  - kill %1

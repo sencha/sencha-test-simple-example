@@ -7,6 +7,7 @@
     },
     "author": "Sencha, Inc.",
     "dependencies": {
-        "@sencha/stc-cli": "~1.0.41"
+        "@sencha/stc-cli": "~1.0.41",
+        "node-sauce-connect": "^4.5.0"
     }
 }
