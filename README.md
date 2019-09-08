@@ -6,6 +6,7 @@ This is a simple sencha test example with a [Saucelabs](https://saucelabs.com/) 
 ## Reference
 
 * [Check out the NPM guide](https://docs.sencha.com/sencha_test/2.3.0/open_tools_npm/using_npm.html).
+* [Check out Sencha Test guides](https://docs.sencha.com/sencha_test/2.3.0/).
 
 ## Requirements
 
