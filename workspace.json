@@ -1,0 +1,33 @@
+{
+    "name": "Simple stc-cli Testing",
+    "build": {
+        "dir": "${workspace.dir}/build"
+    },
+    "packages": {
+        "dir": "${workspace.dir}/packages/local,${workspace.dir}/packages",
+        "extract": "${workspace.dir}/packages/remote"
+    },
+    "tests": {
+        "path": "test/project.json",
+        "browser": {
+            "farms": [
+                {
+                    "name": "Sauce Pool",
+                    "type": "saucelabs",
+                    "port": 4444,
+                    "host": "ondemand.saucelabs.com",
+                    "username": "sencha",
+                    "accessKey": "554f027d-f158-449f-b0c0-2435422970da",
+                    "sessionLimit": 5,
+                    "pools": [
+                        {
+                            "name": "saucePool",
+                            "path": "pools/saucePool.json"
+                        }
+                    ]
+                }
+            ]
+        },
+        "archiveServers": []
+    }
+}

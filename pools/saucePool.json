@@ -1,0 +1,20 @@
+[
+    {
+        "browserName": "android",
+        "version": "9.0",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Linux",
+        "deviceName": "Android GoogleAPI Emulator",
+        "OS": "Android"
+    },
+    {
+        "browserName": "chrome",
+        "version": "76",
+        "sencha": {
+            "concurrency": 1
+        },
+        "platform": "Mac 10.10"
+    }
+]

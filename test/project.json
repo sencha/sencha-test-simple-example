@@ -1,0 +1,18 @@
+{
+    "framework": "jasmine",
+    "libs": [],
+    "coverageFilters": [],
+    "scenarios": [
+        {
+            "libs": [],
+            "coverageFilters": [],
+            "sandbox": true,
+            "globals": "*",
+            "directory": "simple_google_test",
+            "name": "simple_google_test",
+            "page": "https://www.google.com",
+            "webdriverContext": "webdriver"
+        }
+    ],
+    "pageObjects": []
+}

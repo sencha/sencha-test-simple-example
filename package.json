@@ -1,0 +1,12 @@
+{
+    "name": "@sencha/orion-stc-cli-test-project",
+    "version": "1.0.0",
+    "description": "Orion repo tests.",
+    "scripts": {
+        "test": "npx stc run -p 'saucePool' -s 'test/simple_google_test' -o text --trace"
+    },
+    "author": "Sencha, Inc.",
+    "dependencies": {
+        "@sencha/stc-cli": "~1.0.41"
+    }
+}
