@@ -6,12 +6,27 @@
         {
             "libs": [],
             "coverageFilters": [],
+            "sandbox": false,
+            "globals": "*",
+            "directory": "simple_google_test_in_browser",
+            "name": "simple_google_test_in_browser",
+            "page": "https://www.google.com"
+        },
+        {
+            "libs": [
+                {
+                    "disabled": false,
+                    "path": "/test/simple_google_test_web_driver/lib",
+                    "type": "directory"
+                }
+            ],
+            "coverageFilters": [],
+            "webdriverContext": "webdriver",
             "sandbox": true,
             "globals": "*",
-            "directory": "simple_google_test",
-            "name": "simple_google_test",
+            "directory": "simple_google_test_web_driver",
             "page": "https://www.google.com",
-            "webdriverContext": "webdriver"
+            "name": "simple_google_test_web_driver"
         }
     ],
     "pageObjects": []
