@@ -1,7 +1,11 @@
 # Simple Sencha Test CLI Project
 This is a simple sencha test example with a [Saucelabs](https://saucelabs.com/) configuration.
 
-![Example](./example.gif)
+Debugging using In Browser Mode
+![InBrowser Mode Debugging](./simple-debug-in-browser.gif)
+
+Debugging using WebDriverIO Mode
+![InBrowser Mode Debugging](./simple-debug-web-driver.gif)
 
 ## Reference
 
