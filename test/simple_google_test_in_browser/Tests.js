@@ -6,10 +6,10 @@ describe("Simple Google In Browser Tests", function() {
             // And there is focus on the input
             .focus() 
             // When I type in Sencha
-            .type('Sencha') 
+            .type('Sencha')
+            // Then Sencha exists in input
             .expect('value')
             .toBe('Sencha')
-            // Then Sencha exists in input
             .and(function (input) {
                 debugger;
                 // In browser option
