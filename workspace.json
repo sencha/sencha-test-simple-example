@@ -17,7 +17,7 @@
                     "port": 4444,
                     "host": "ondemand.saucelabs.com",
                     "username": "sencha",
-                    "accessKey": "bb906983-9ec2-4e4d-bd5d-6d74dd9636ca",
+                    "accessKey": "bb906983-9ec2-4e4d-bd5d-xxxx",
                     "sessionLimit": 5,
                     "pools": [
                         {
