@@ -35,8 +35,21 @@ npm install
 ```
 
 ## Running
-Run using npm. 
+Run using npm. When running tests against SauceLabs you will have to start a tunnel. 
 
+Start the tunnel.
+```
+# run the command with NPM or copy the command from package.json. 
+# Be sure to replace the access key with yours. 
+npm start
+```
+
+Run the tests.
 ```
 npm test
+```
+
+Stop the tunnel.
+```
+npm stop
 ```
