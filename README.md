@@ -25,7 +25,8 @@ npm login --registry=https://npm.sencha.com --scope=@sencha
 ```
 
 ## Configure
-Configure the [./workspace.json](./workspace.json) user and accessKey for [Saucelabs](https://saucelabs.com/).
+* Configure the [./workspace.json](./workspace.json) user and accessKey for [Saucelabs](https://saucelabs.com/).
+* Configure the [./package.json](./package.json) accessKey for [Saucelabs](https://saucelabs.com/). 
 
 ## Install
 Download the dependencies to node_modules by running `npm install`. 
