@@ -1,13 +1,17 @@
 {
-    "name": "@sencha/orion-stc-cli-test-project",
-    "version": "1.0.0",
-    "description": "Orion repo tests.",
-    "scripts": {
-        "test": "npx stc run -p 'saucePool' -s 'test/simple_google_test' -o text --trace"
-    },
-    "author": "Sencha, Inc.",
-    "dependencies": {
-        "@sencha/stc-cli": "*",
-        "node-sauce-connect": "^4.5.0"
-    }
+  "name": "@sencha/orion-stc-cli-test-project",
+  "version": "1.0.0",
+  "description": "Orion repo tests.",
+  "scripts": {
+    "start": "npx sc -u sencha -k bb906983-9ec2-4e4d-bd5d-xxx --tunnel-identifier teamcityTunnel --no-ssl-bump-domains all &",
+    "test": "npx stc run -p 'saucePool' -s 'test/simple_google_test_in_browser' -o text || npx stc run -p 'saucePool' -s 'test/simple_google_test_web_driver' -o text",
+    "testInBrowser" : "npx stc run -p 'saucePool' -s 'test/simple_google_test_in_browser' -o text",
+    "testWebDriver" : "npx stc run -p 'saucePool' -s 'test/simple_google_test_web_driver' -o text",
+    "stop": "pkill -f -x sc"
+  },
+  "author": "Sencha, Inc.",
+  "dependencies": {
+    "@sencha/stc-cli": "*",
+    "node-sauce-connect": "^4.5.0"
+  }
 }

@@ -7,7 +7,8 @@
         },
         "platform": "Linux",
         "deviceName": "Android GoogleAPI Emulator",
-        "OS": "Android"
+        "OS": "Android",
+        "tunnelIdentifier": "teamcityTunnel"
     },
     {
         "browserName": "chrome",
@@ -15,6 +16,7 @@
         "sencha": {
             "concurrency": 1
         },
-        "platform": "Mac 10.10"
+        "platform": "Mac 10.10",
+        "tunnelIdentifier": "teamcityTunnel"
     }
 ]
